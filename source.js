@@ -14,4 +14,9 @@ function RenderScene() {
         let Color = { R: 16, G: 128, B: 256 };
         RenderLine(CenterX - OffsetX, CenterY - OffsetY, CenterX + OffsetX, CenterY + OffsetY, i, Color);
     }
+    for (let i = 0; i < 100; i++) {
+        let x = Math.random() * CanvasWidth;
+        let y = Math.random() * CanvasHeight;
+        RenderPoint(x, y, 2);
+    }
 }
